@@ -26,7 +26,7 @@ function ChatWithProfessional(props) {
         prompt,
         response_type: 'text',
       });
-      setMessages([...messages(), userMessage, { sender: 'professional', text: aiResponse }]);
+      setMessages([...messages(), { sender: 'professional', text: aiResponse }]);
     } catch (error) {
       console.error('Error fetching response:', error);
     } finally {
