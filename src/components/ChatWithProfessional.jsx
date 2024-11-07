@@ -5,7 +5,7 @@ import { For } from 'solid-js';
 function ChatWithProfessional(props) {
   const { role, loading, setLoading } = props;
   const [messages, setMessages] = createSignal([
-    { sender: 'professional', text: `Hi! I'm a ${role.role} at Tilbury Douglas. What would you like to know about my job?` },
+    { sender: 'professional', text: `Hi! I'm a ${role.role}. What would you like to know about my job?` },
   ]);
   const [userInput, setUserInput] = createSignal('');
 
@@ -17,7 +17,7 @@ function ChatWithProfessional(props) {
     setLoading(true);
     try {
       const prompt = `
-        Pretend you are a ${role.role} at Tilbury Douglas explaining to a kid.
+        Pretend you are a ${role.role} explaining to a kid.
         The conversation so far:
         ${messages().map((msg) => `${msg.sender === 'user' ? 'User' : role.role}: ${msg.text}`).join('\n')}
         ${role.role}: 

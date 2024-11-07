@@ -9,7 +9,7 @@ function RoleDetails(props) {
     setLoading(true);
     try {
       const result = await createEvent('generate_image', {
-        prompt: `A kid-friendly illustration of a ${role.role} at work at Tilbury Douglas construction site`,
+        prompt: `A kid-friendly illustration of a ${role.role} at work on a construction site`,
       });
       setImageUrl(result);
     } catch (error) {

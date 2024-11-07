@@ -41,7 +41,7 @@ function Questionnaire(props) {
     setLoading(true);
     try {
       const prompt = `
-        Based on the following answers, recommend a suitable construction career role at Tilbury Douglas for a kid:
+        Based on the following answers, recommend a suitable construction career role for a kid:
         ${JSON.stringify(answers())}
         Provide the result in the following JSON format:
         {
@@ -67,7 +67,7 @@ function Questionnaire(props) {
 
   return (
     <div class="bg-white p-6 rounded-lg shadow-md flex-1 flex flex-col">
-      <h2 class="text-2xl font-bold mb-4 text-green-600">Start Exploration</h2>
+      <h2 class="text-2xl font-bold mb-4 text-green-600">Questionnaire</h2>
       {questions.map((q) => (
         <div class="mb-4" key={q.key}>
           <p class="font-semibold mb-2">{q.question}</p>

@@ -1,7 +1,7 @@
 {
-  "name": "tilbury-douglas-career-explorer",
+  "name": "construction-career-explorer",
   "version": "1.0.0",
-  "description": "An app to help kids explore construction careers at Tilbury Douglas",
+  "description": "An app to help kids explore construction careers",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -9,8 +9,6 @@
     "serve": "vite preview"
   },
   "dependencies": {
-    "@supabase/auth-ui-shared": "^0.1.8",
-    "@supabase/auth-ui-solid": "^0.3.8",
     "@zapt/zapt-js": "^1.0.5",
     "solid-js": "^1.8.22",
     "@sentry/browser": "^8.35.0",
