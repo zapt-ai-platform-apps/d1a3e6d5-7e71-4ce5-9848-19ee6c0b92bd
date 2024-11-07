@@ -1,5 +1,6 @@
 import { createSignal, For } from 'solid-js';
 import { createEvent } from '../supabaseClient';
+import { SolidMarkdown } from 'solid-markdown';
 
 function ChatWithProfessional(props) {
   const { role, loading, setLoading } = props;
@@ -55,7 +56,11 @@ function ChatWithProfessional(props) {
               }`}
             >
               <p class="font-semibold text-gray-700">{msg.sender === 'user' ? 'You' : role.role}</p>
-              <p class="text-gray-700">{msg.text}</p>
+              {msg.sender === 'user' ? (
+                <p class="text-gray-700">{msg.text}</p>
+              ) : (
+                <SolidMarkdown class="text-gray-700" children={msg.text} />
+              )}
             </div>
           )}
         </For>
