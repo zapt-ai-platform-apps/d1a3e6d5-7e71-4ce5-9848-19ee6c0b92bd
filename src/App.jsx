@@ -1,16 +1,22 @@
 import { createSignal, Show } from 'solid-js';
 import WelcomePage from './components/WelcomePage';
 import Questionnaire from './components/Questionnaire';
+import CareerSelection from './components/CareerSelection';
 import RoleDetails from './components/RoleDetails';
 import ChatWithProfessional from './components/ChatWithProfessional';
 
 function App() {
   const [selectedRole, setSelectedRole] = createSignal(null);
+  const [recommendedRoles, setRecommendedRoles] = createSignal([]);
   const [started, setStarted] = createSignal(false);
   const [loading, setLoading] = createSignal(false);
 
   const handleStart = () => {
     setStarted(true);
+  };
+
+  const selectRole = (role) => {
+    setSelectedRole(role);
   };
 
   return (
@@ -20,8 +26,19 @@ function App() {
         <Show when={!started()}>
           <WelcomePage onStart={handleStart} />
         </Show>
-        <Show when={started() && !selectedRole()}>
-          <Questionnaire setSelectedRole={setSelectedRole} loading={loading} setLoading={setLoading} />
+        <Show when={started() && recommendedRoles().length === 0 && !selectedRole()}>
+          <Questionnaire
+            setRecommendedRoles={setRecommendedRoles}
+            loading={loading}
+            setLoading={setLoading}
+          />
+        </Show>
+        <Show when={recommendedRoles().length > 0 && !selectedRole()}>
+          <CareerSelection
+            recommendedRoles={recommendedRoles}
+            selectRole={selectRole}
+            loading={loading}
+          />
         </Show>
         <Show when={selectedRole()}>
           <RoleDetails

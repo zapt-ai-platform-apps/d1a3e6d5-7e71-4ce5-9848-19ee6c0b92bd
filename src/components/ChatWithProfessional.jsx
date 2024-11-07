@@ -1,6 +1,5 @@
-import { createSignal } from 'solid-js';
+import { createSignal, For } from 'solid-js';
 import { createEvent } from '../supabaseClient';
-import { For } from 'solid-js';
 
 function ChatWithProfessional(props) {
   const { role, loading, setLoading } = props;
@@ -16,11 +15,14 @@ function ChatWithProfessional(props) {
     setUserInput('');
     setLoading(true);
     try {
+      const conversation = messages()
+        .map((msg) => `${msg.sender === 'user' ? 'User' : role.role}: ${msg.text}`)
+        .join('\n');
       const prompt = `
-        Pretend you are a ${role.role} explaining to a kid.
-        The conversation so far:
-        ${messages().map((msg) => `${msg.sender === 'user' ? 'User' : role.role}: ${msg.text}`).join('\n')}
-        ${role.role}: 
+        You are a helpful and friendly ${role.role} explaining to a kid.
+        Continue the conversation based on the following dialogue:
+        ${conversation}
+        ${role.role}:
       `;
       const aiResponse = await createEvent('chatgpt_request', {
         prompt,
@@ -52,8 +54,8 @@ function ChatWithProfessional(props) {
                 msg.sender === 'user' ? 'bg-yellow-100 self-end' : 'bg-green-100 self-start'
               }`}
             >
-              <p class="font-semibold">{msg.sender === 'user' ? 'You' : role.role}</p>
-              <p>{msg.text}</p>
+              <p class="font-semibold text-gray-700">{msg.sender === 'user' ? 'You' : role.role}</p>
+              <p class="text-gray-700">{msg.text}</p>
             </div>
           )}
         </For>

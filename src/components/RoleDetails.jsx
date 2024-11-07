@@ -21,8 +21,8 @@ function RoleDetails(props) {
 
   return (
     <div class="bg-white p-6 rounded-lg shadow-md mb-4">
-      <h2 class="text-2xl font-bold mb-4 text-green-600">Your Recommended Role: {role.role}</h2>
-      <p class="mb-4">{role.description}</p>
+      <h2 class="text-2xl font-bold mb-4 text-green-600">Your Selected Role: {role.role}</h2>
+      <p class="mb-4 text-gray-700">{role.description}</p>
       <Show when={imageUrl()}>
         <img src={imageUrl()} alt={role.role} class="w-full rounded-lg shadow-md mb-4" />
       </Show>

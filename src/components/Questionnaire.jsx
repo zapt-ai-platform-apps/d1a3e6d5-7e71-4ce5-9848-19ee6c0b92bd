@@ -1,8 +1,8 @@
-import { createSignal } from 'solid-js';
+import { createSignal, Show } from 'solid-js';
 import { createEvent } from '../supabaseClient';
 
 function Questionnaire(props) {
-  const { setSelectedRole, loading, setLoading } = props;
+  const { setRecommendedRoles, loading, setLoading } = props;
   const [answers, setAnswers] = createSignal({
     likesOutdoors: '',
     prefersTeamwork: '',
@@ -41,25 +41,37 @@ function Questionnaire(props) {
     setLoading(true);
     try {
       const prompt = `
-        Based on the following answers, recommend a suitable construction career role for a kid:
+        Based on the following answers, recommend three suitable construction career roles for a kid:
         ${JSON.stringify(answers())}
         Provide the result in the following JSON format:
         {
-          "role": "Role Name",
-          "description": "Brief description of the role suitable for kids."
+          "roles": [
+            {
+              "role": "Role Name 1",
+              "description": "Brief description of role 1 suitable for kids."
+            },
+            {
+              "role": "Role Name 2",
+              "description": "Brief description of role 2 suitable for kids."
+            },
+            {
+              "role": "Role Name 3",
+              "description": "Brief description of role 3 suitable for kids."
+            }
+          ]
         }
       `;
       const result = await createEvent('chatgpt_request', {
         prompt,
         response_type: 'json',
       });
-      if (result && result.role) {
-        setSelectedRole(result);
+      if (result && result.roles && result.roles.length > 0) {
+        setRecommendedRoles(result.roles);
       } else {
         alert('Sorry, something went wrong. Please try again.');
       }
     } catch (error) {
-      console.error('Error generating role:', error);
+      console.error('Error generating roles:', error);
     } finally {
       setLoading(false);
     }
@@ -70,7 +82,7 @@ function Questionnaire(props) {
       <h2 class="text-2xl font-bold mb-4 text-green-600">Questionnaire</h2>
       {questions.map((q) => (
         <div class="mb-4" key={q.key}>
-          <p class="font-semibold mb-2">{q.question}</p>
+          <p class="font-semibold mb-2 text-gray-700">{q.question}</p>
           <div class="flex space-x-4">
             {q.options.map((option) => (
               <label class="flex items-center cursor-pointer">
@@ -82,7 +94,7 @@ function Questionnaire(props) {
                   onChange={() => handleAnswerChange(q.key, option)}
                   class="form-radio text-green-600"
                 />
-                <span class="ml-2">{option}</span>
+                <span class="ml-2 text-gray-700">{option}</span>
               </label>
             ))}
           </div>
@@ -95,7 +107,7 @@ function Questionnaire(props) {
           loading() ? 'opacity-50 cursor-not-allowed' : ''
         }`}
       >
-        {loading() ? 'Processing...' : 'Get Recommendation'}
+        {loading() ? 'Processing...' : 'Get Recommendations'}
       </button>
     </div>
   );
