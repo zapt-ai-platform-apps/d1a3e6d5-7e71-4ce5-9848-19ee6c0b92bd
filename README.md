@@ -1,6 +1,6 @@
-# Construction Career Explorer
+# Tilbury Douglas Career Explorer
 
-Construction Career Explorer is an engaging app designed to help kids explore various roles in the construction industry. Through an interactive questionnaire, the app recommends suitable construction roles based on the user's interests and preferences. Users can then learn more about the recommended role and even have a conversation with an AI-powered professional in that field.
+Tilbury Douglas Career Explorer is an engaging app designed to help kids explore various roles in the construction industry within Tilbury Douglas, a leading UK building, infrastructure, engineering, and fit-out company. Through an interactive questionnaire, the app recommends suitable construction roles available at Tilbury Douglas based on the user's interests and preferences. Users can then learn more about the recommended role and even have a conversation with an AI-powered professional in that field.
 
 ## User Journey
 
@@ -11,14 +11,14 @@ Construction Career Explorer is an engaging app designed to help kids explore va
 ### 2. Complete the Questionnaire
 - **Step 1:** After signing in, start the career exploration by clicking on "Start Exploration".
 - **Step 2:** Answer a series of fun and engaging questions about your interests and preferences.
-- **Step 3:** Upon completion, the app recommends a construction role that best matches your answers.
+- **Step 3:** Upon completion, the app recommends a suitable role at Tilbury Douglas that best matches your answers.
 
 ### 3. Learn About the Recommended Role
-- **Step 1:** View detailed information about the recommended role, including responsibilities, required skills, and interesting facts.
+- **Step 1:** View detailed information about the recommended role within Tilbury Douglas, including responsibilities, required skills, and interesting facts.
 - **Step 2:** Read through a concise description designed to be both informative and kid-friendly.
 
 ### 4. Chat with a Professional
-- **Step 1:** Engage in a conversation with an AI-powered professional in the recommended role.
+- **Step 1:** Engage in a conversation with an AI-powered professional from Tilbury Douglas in the recommended role.
 - **Step 2:** Ask questions about the role, what a typical day looks like, or any other curiosities.
 - **Step 3:** Receive informative and interactive responses to deepen your understanding.
 
@@ -34,9 +34,9 @@ Construction Career Explorer is an engaging app designed to help kids explore va
 
 - **User Authentication:** Secure sign-in using ZAPT with multiple providers.
 - **Interactive Questionnaire:** Engaging questions that tailor role recommendations to the user's interests.
-- **Role Recommendations:** Personalized construction role suggestions based on questionnaire results.
-- **Role Information:** Detailed and kid-friendly explanations of various construction roles.
-- **AI Conversations:** Chat with AI-powered professionals to ask questions and learn more.
+- **Role Recommendations:** Personalized construction role suggestions at Tilbury Douglas based on questionnaire results.
+- **Role Information:** Detailed and kid-friendly explanations of various roles within Tilbury Douglas.
+- **AI Conversations:** Chat with AI-powered professionals from Tilbury Douglas to ask questions and learn more.
 - **Responsive Design:** User-friendly interface that works seamlessly on all devices.
 
 ## External APIs Used
@@ -46,4 +46,4 @@ Construction Career Explorer is an engaging app designed to help kids explore va
 
 ## Note
 
-This app is designed to be educational and fun, encouraging kids to explore the construction industry in an interactive way. Enjoy your journey into the world of construction careers!
+This app is designed to be educational and fun, encouraging kids to explore the construction industry and career opportunities at Tilbury Douglas in an interactive way. Enjoy your journey into the world of construction careers at Tilbury Douglas!

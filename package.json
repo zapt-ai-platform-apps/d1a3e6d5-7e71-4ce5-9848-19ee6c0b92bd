@@ -1,7 +1,7 @@
 {
-  "name": "construction-career-explorer",
+  "name": "tilbury-douglas-career-explorer",
   "version": "1.0.0",
-  "description": "An app to help kids explore construction careers",
+  "description": "An app to help kids explore construction careers at Tilbury Douglas",
   "type": "module",
   "scripts": {
     "dev": "vite",
