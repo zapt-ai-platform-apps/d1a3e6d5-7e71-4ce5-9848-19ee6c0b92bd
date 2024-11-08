@@ -21,6 +21,7 @@ function ChatWithProfessional(props) {
         .join('\n');
       const prompt = `
         You are a helpful and friendly ${role.role} explaining to a kid.
+        Please respond using UK English spelling and vocabulary.
         Continue the conversation based on the following dialogue:
         ${conversation}
         ${role.role}:
