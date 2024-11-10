@@ -8,41 +8,39 @@ Construction Career Explorer is an engaging app designed to help kids explore va
 
 1. **Open the App**: Launch the app to be greeted by a friendly and interactive welcome page featuring a colourful image of children happily exploring various construction careers.
 2. **Introduction**: Read about how the app can help you discover exciting construction careers.
+3. **Start Exploration**: Click on "Start Exploration" to begin your personalised career discovery.
 
-### 2. Start Your Exploration
-
-1. **Begin the Journey**: Click on "Start Exploration" to begin your personalised career discovery.
-
-### 3. Answer the Comprehensive Questionnaire
+### 2. Answer the Comprehensive Questionnaire
 
 1. **Deep-Dive Questions**: Answer a series of in-depth and engaging questions about your interests, preferences, and skills.
 2. **Interactive Options**: Select your answers from multiple-choice options that best describe you.
 3. **Enhanced Accuracy**: The expanded questionnaire provides more accurate and personalised career recommendations.
 
-### 4. View Recommended Roles
+### 3. View Recommended Roles
 
 1. **Personalised Suggestions**: After completing the questionnaire, view a comprehensive list of construction roles recommended for you.
 2. **Role Descriptions**: Read brief, kid-friendly descriptions of each recommended role.
 
-### 5. Choose a Role to Explore
+### 4. Choose a Role to Explore
 
 1. **Select a Role**: Pick any role that interests you the most to learn more about it.
 
-### 6. Explore the Selected Role
+### 5. Explore the Selected Role
 
 1. **Role Details**: View detailed information about the selected role, including:
    - **Description**: An overview of what the role entails.
    - **Routes to Entry**: Information on how to enter the profession.
    - **Qualifications Needed**: Details about the qualifications required.
    - **Helpful Links**: Access links to well-known organisations such as CIOB, Construction Industry Training, and other industry bodies for more information.
+2. **Chat with a Professional**: Engage in a conversation with an AI-powered professional in the selected construction role.
 
-### 7. Chat with a Professional
+### 6. Chat with a Professional
 
 1. **Start Conversation**: Engage in a conversation with an AI-powered professional in the selected construction role.
 2. **Ask Questions**: Ask questions about the role, daily activities, or any other curiosities.
 3. **Receive Responses**: Get informative and interactive responses, formatted nicely with markdown and using UK English spelling and vocabulary. The AI is context-aware that all roles are within the construction industry, ensuring accurate and relevant information.
 
-### 8. Explore More Roles
+### 7. Explore More Roles
 
 1. **Choose Another Role**: Optionally, go back to explore other recommended roles or retake the questionnaire to get new suggestions.
 2. **Repeat the Experience**: Enjoy learning and chatting with AI professionals in different construction roles.
