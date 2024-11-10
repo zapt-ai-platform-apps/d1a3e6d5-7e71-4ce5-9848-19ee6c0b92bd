@@ -44,6 +44,8 @@ function App() {
           <RoleDetails
             role={selectedRole()}
             setSelectedRole={setSelectedRole}
+            loading={loading}
+            setLoading={setLoading}
           />
           <ChatWithProfessional
             role={selectedRole()}

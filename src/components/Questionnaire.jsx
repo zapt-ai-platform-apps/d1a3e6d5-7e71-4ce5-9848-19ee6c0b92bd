@@ -85,24 +85,11 @@ function Questionnaire(props) {
           "roles": [
             {
               "role": "Role Name 1",
-              "description": "Brief description of role 1 suitable for kids.",
-              "routesToEntry": "Routes to entry for the role.",
-              "qualificationsNeeded": "Qualifications needed for the role.",
-              "helpfulLinks": [
-                {
-                  "name": "Organisation 1",
-                  "url": "https://organisation1.com"
-                },
-                {
-                  "name": "Organisation 2",
-                  "url": "https://organisation2.com"
-                }
-              ]
-            },
+              "description": "Brief description of role 1 suitable for kids."
+            }
             // Continue up to Role Name 10
           ]
         }
-        Include links to helpful information from organisations such as CIOB, Construction Industry Training, and other well-known bodies.
         Make sure the recommendations are based on the detailed answers and are tailored to the kid's interests and preferences.
       `;
       const result = await createEvent('chatgpt_request', {

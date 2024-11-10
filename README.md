@@ -1,6 +1,6 @@
 # Construction Career Explorer
 
-Construction Career Explorer is an engaging app designed to help kids explore various roles in the **construction industry**. Through an interactive and comprehensive questionnaire, the app recommends a detailed list of suitable construction roles based on the user's interests, preferences, and skills. Users can then choose any role from the recommendations to learn more about it, including routes to entry, qualifications needed, and helpful links to well-known industry bodies. Additionally, users can have a conversation with an AI-powered professional **in that specific construction role**. The AI responses are formatted nicely with markdown and are in UK English, ensuring that discussions are always relevant to the construction industry.
+Construction Career Explorer is an engaging app designed to help kids explore various roles in the **construction industry**. Through an interactive and comprehensive questionnaire, the app recommends a list of suitable construction roles based on the user's interests, preferences, and skills. Users can then choose any role from the recommendations to learn more about it, including detailed routes to entry, qualifications needed, and helpful links to well-known industry bodies. Additionally, users can have a conversation with an AI-powered professional **in that specific construction role**. The AI responses are formatted nicely with markdown and are in UK English, ensuring that discussions are always relevant to the construction industry.
 
 ## User Journey
 
@@ -18,21 +18,21 @@ Construction Career Explorer is an engaging app designed to help kids explore va
 
 ### 3. View Recommended Roles
 
-1. **Personalised Suggestions**: After completing the questionnaire, view a comprehensive list of construction roles recommended for you.
+1. **Personalised Suggestions**: After completing the questionnaire, view a list of construction roles recommended for you.
 2. **Role Descriptions**: Read brief, kid-friendly descriptions of each recommended role.
 
 ### 4. Choose a Role to Explore
 
 1. **Select a Role**: Pick any role that interests you the most to learn more about it.
 
-### 5. Explore the Selected Role
+### 5. Explore the Selected Role in Detail
 
-1. **Role Details**: View detailed information about the selected role, including:
-   - **Description**: An overview of what the role entails.
+1. **Fetching Detailed Information**: The app fetches comprehensive details about the selected role.
+2. **Role Details**: View detailed information about the selected role, including:
+   - **Description**: An in-depth overview of what the role entails.
    - **Routes to Entry**: Information on how to enter the profession.
    - **Qualifications Needed**: Details about the qualifications required.
    - **Helpful Links**: Access links to well-known organisations such as CIOB, Construction Industry Training, and other industry bodies for more information.
-2. **Chat with a Professional**: Engage in a conversation with an AI-powered professional in the selected construction role.
 
 ### 6. Chat with a Professional
 
@@ -48,11 +48,8 @@ Construction Career Explorer is an engaging app designed to help kids explore va
 ## Features
 
 - **Comprehensive Interactive Questionnaire**: In-depth questions that tailor role recommendations to the user's interests, preferences, and skills.
+- **Detailed Role Information**: After selecting a role, get comprehensive details including routes to entry, qualifications needed, and helpful links to industry organisations.
 - **Context-Aware AI Conversations**: The AI understands that all discussions are about roles in the construction industry, providing accurate and industry-specific information.
-- **Extensive Role Information**: Detailed insights into each role, including routes to entry, qualifications needed, and helpful links to industry organisations.
-- **Role Selection**: Users can choose their preferred role from the recommendations.
-- **Role Details**: Access detailed and kid-friendly explanations of various construction roles.
-- **AI Conversations with Markdown Support and UK English**: Chat with AI-powered professionals whose responses are formatted nicely using markdown and are in UK English for better readability.
 - **Responsive Design**: User-friendly interface that works seamlessly on all devices.
 - **Welcoming Page**: A friendly introduction to the app, explaining its purpose and how to use it.
 
