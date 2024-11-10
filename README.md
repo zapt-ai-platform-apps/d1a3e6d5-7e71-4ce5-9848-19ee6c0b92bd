@@ -21,7 +21,6 @@ Construction Career Explorer is an engaging app designed to help kids explore va
 
 ### 5. Explore the Selected Role
 - **Step 1:** View detailed information about the selected role, including responsibilities, required skills, and interesting facts.
-- **Step 2:** See a generated image representing the role.
 
 ### 6. Chat with a Professional
 - **Step 1:** Engage in a conversation with an AI-powered professional in the selected role.
