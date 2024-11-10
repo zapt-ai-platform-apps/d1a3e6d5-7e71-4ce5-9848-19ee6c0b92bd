@@ -1,6 +1,6 @@
 # Construction Career Explorer
 
-Construction Career Explorer is an engaging app designed to help kids explore various roles in the construction industry. Through an interactive and comprehensive questionnaire, the app recommends a detailed list of suitable construction roles based on the user's interests, preferences, and skills. Users can then choose any role from the recommendations to learn more about it, including routes to entry, qualifications needed, and helpful links to well-known industry bodies. Additionally, users can have a conversation with an AI-powered professional in that field. The AI responses are formatted nicely with markdown and are in UK English.
+Construction Career Explorer is an engaging app designed to help kids explore various roles in the **construction industry**. Through an interactive and comprehensive questionnaire, the app recommends a detailed list of suitable construction roles based on the user's interests, preferences, and skills. Users can then choose any role from the recommendations to learn more about it, including routes to entry, qualifications needed, and helpful links to well-known industry bodies. Additionally, users can have a conversation with an AI-powered professional **in that specific construction role**. The AI responses are formatted nicely with markdown and are in UK English, ensuring that discussions are always relevant to the construction industry.
 
 ## User Journey
 
@@ -38,18 +38,19 @@ Construction Career Explorer is an engaging app designed to help kids explore va
 
 ### 7. Chat with a Professional
 
-1. **Start Conversation**: Engage in a conversation with an AI-powered professional in the selected role.
+1. **Start Conversation**: Engage in a conversation with an AI-powered professional in the selected construction role.
 2. **Ask Questions**: Ask questions about the role, daily activities, or any other curiosities.
-3. **Receive Responses**: Get informative and interactive responses, formatted nicely with markdown and using UK English spelling and vocabulary, to deepen your understanding.
+3. **Receive Responses**: Get informative and interactive responses, formatted nicely with markdown and using UK English spelling and vocabulary. The AI is context-aware that all roles are within the construction industry, ensuring accurate and relevant information.
 
 ### 8. Explore More Roles
 
 1. **Choose Another Role**: Optionally, go back to explore other recommended roles or retake the questionnaire to get new suggestions.
-2. **Repeat the Experience**: Enjoy learning and chatting with AI professionals in different roles.
+2. **Repeat the Experience**: Enjoy learning and chatting with AI professionals in different construction roles.
 
 ## Features
 
 - **Comprehensive Interactive Questionnaire**: In-depth questions that tailor role recommendations to the user's interests, preferences, and skills.
+- **Context-Aware AI Conversations**: The AI understands that all discussions are about roles in the construction industry, providing accurate and industry-specific information.
 - **Extensive Role Information**: Detailed insights into each role, including routes to entry, qualifications needed, and helpful links to industry organisations.
 - **Role Selection**: Users can choose their preferred role from the recommendations.
 - **Role Details**: Access detailed and kid-friendly explanations of various construction roles.
@@ -60,9 +61,9 @@ Construction Career Explorer is an engaging app designed to help kids explore va
 ## External APIs Used
 
 - **ZAPT**: For event handling and backend communication.
-- **AI Backend Services**: To generate role descriptions, recommendations, and facilitate AI conversations with professionals. Responses are formatted in markdown and use UK English.
+- **AI Backend Services**: To generate role descriptions, recommendations, and facilitate AI conversations with professionals. The AI is prompted to be aware that all roles are within the construction industry. Responses are formatted in markdown and use UK English.
 - **Solid-Markdown**: Used to render markdown-formatted responses in the chat interface.
 
 ## Note
 
-This app is designed to be educational and fun, encouraging kids to explore the construction industry and career opportunities in an interactive way. The AI conversations are provided in UK English to enhance relevance and understanding. Enjoy your journey into the world of construction careers!
+This app is designed to be educational and fun, encouraging kids to explore the construction industry and career opportunities in an interactive way. The AI conversations are contextually aware that the roles are within the construction industry and are provided in UK English to enhance relevance and understanding. Enjoy your journey into the world of construction careers!

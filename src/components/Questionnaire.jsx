@@ -77,7 +77,8 @@ function Questionnaire(props) {
     setLoading(true);
     try {
       const prompt = `
-        Based on the following answers, recommend ten suitable construction career roles for a kid:
+        Based on the following answers, recommend ten suitable construction career roles for a kid.
+        Ensure all recommended roles are specifically within the construction industry, avoiding any ambiguity with other industries.
         ${JSON.stringify(answers())}
         For each role, provide the following information in JSON format:
         {

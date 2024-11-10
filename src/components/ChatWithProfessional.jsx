@@ -5,7 +5,7 @@ import { SolidMarkdown } from 'solid-markdown';
 function ChatWithProfessional(props) {
   const { role, loading, setLoading } = props;
   const [messages, setMessages] = createSignal([
-    { sender: 'professional', text: `Hi! I'm a ${role.role}. What would you like to know about my job?` },
+    { sender: 'professional', text: `Hi! I'm a ${role.role} working in the construction industry. What would you like to know about my job?` },
   ]);
   const [userInput, setUserInput] = createSignal('');
 
@@ -20,8 +20,9 @@ function ChatWithProfessional(props) {
         .map((msg) => `${msg.sender === 'user' ? 'User' : role.role}: ${msg.text}`)
         .join('\n');
       const prompt = `
-        You are a helpful and friendly ${role.role} explaining to a kid.
-        Please respond using UK English spelling and vocabulary.
+        You are a helpful and friendly ${role.role} working in the construction industry, explaining to a kid.
+        Please ensure that all information and answers relate specifically to the construction industry.
+        Respond using UK English spelling and vocabulary.
         Continue the conversation based on the following dialogue:
         ${conversation}
         ${role.role}:
