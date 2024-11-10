@@ -6,8 +6,14 @@ function Questionnaire(props) {
   const [answers, setAnswers] = createSignal({
     likesOutdoors: '',
     prefersTeamwork: '',
-    enjoysMath: '',
+    enjoysMaths: '',
     likesDesign: '',
+    worksWithHands: '',
+    interestedInTechnology: '',
+    prefersPlanning: '',
+    comfortableWithHeights: '',
+    eyeForDetail: '',
+    enjoysHelpingOthers: '',
   });
 
   const questions = [
@@ -22,13 +28,43 @@ function Questionnaire(props) {
       options: ['Yes', 'No'],
     },
     {
-      key: 'enjoysMath',
-      question: 'Do you enjoy math and problem-solving?',
+      key: 'enjoysMaths',
+      question: 'Do you enjoy maths and problem-solving?',
       options: ['Yes', 'No'],
     },
     {
       key: 'likesDesign',
       question: 'Are you interested in design and creativity?',
+      options: ['Yes', 'No'],
+    },
+    {
+      key: 'worksWithHands',
+      question: 'Do you like building or fixing things with your hands?',
+      options: ['Yes', 'No'],
+    },
+    {
+      key: 'interestedInTechnology',
+      question: 'Are you interested in technology and how things work?',
+      options: ['Yes', 'No'],
+    },
+    {
+      key: 'prefersPlanning',
+      question: 'Do you enjoy planning and organising tasks?',
+      options: ['Yes', 'No'],
+    },
+    {
+      key: 'comfortableWithHeights',
+      question: 'Are you comfortable working at heights?',
+      options: ['Yes', 'No'],
+    },
+    {
+      key: 'eyeForDetail',
+      question: 'Do you have a keen eye for detail?',
+      options: ['Yes', 'No'],
+    },
+    {
+      key: 'enjoysHelpingOthers',
+      question: 'Do you enjoy helping others and being supportive?',
       options: ['Yes', 'No'],
     },
   ];
@@ -57,6 +93,7 @@ function Questionnaire(props) {
             }
           ]
         }
+        Make sure the recommendations are based on the detailed answers and are tailored to the kid's interests and preferences.
       `;
       const result = await createEvent('chatgpt_request', {
         prompt,
