@@ -79,20 +79,29 @@ function Questionnaire(props) {
       const prompt = `
         Based on the following answers, recommend ten suitable construction career roles for a kid:
         ${JSON.stringify(answers())}
-        Provide the result in the following JSON format:
+        For each role, provide the following information in JSON format:
         {
           "roles": [
             {
               "role": "Role Name 1",
-              "description": "Brief description of role 1 suitable for kids."
+              "description": "Brief description of role 1 suitable for kids.",
+              "routesToEntry": "Routes to entry for the role.",
+              "qualificationsNeeded": "Qualifications needed for the role.",
+              "helpfulLinks": [
+                {
+                  "name": "Organisation 1",
+                  "url": "https://organisation1.com"
+                },
+                {
+                  "name": "Organisation 2",
+                  "url": "https://organisation2.com"
+                }
+              ]
             },
             // Continue up to Role Name 10
-            {
-              "role": "Role Name 10",
-              "description": "Brief description of role 10 suitable for kids."
-            }
           ]
         }
+        Include links to helpful information from organisations such as CIOB, Construction Industry Training, and other well-known bodies.
         Make sure the recommendations are based on the detailed answers and are tailored to the kid's interests and preferences.
       `;
       const result = await createEvent('chatgpt_request', {
