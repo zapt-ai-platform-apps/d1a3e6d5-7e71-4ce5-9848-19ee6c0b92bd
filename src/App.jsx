@@ -20,7 +20,7 @@ function App() {
   };
 
   return (
-    <div class="min-h-screen bg-gradient-to-br from-yellow-100 to-green-100 p-4">
+    <div class="min-h-screen bg-gradient-to-br from-yellow-100 to-green-100 p-4 text-gray-800">
       <div class="max-w-4xl mx-auto h-full flex flex-col">
         <h1 class="text-4xl font-bold text-green-600 mb-8 text-center">Construction Career Explorer</h1>
         <Show when={!started()}>

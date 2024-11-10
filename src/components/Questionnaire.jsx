@@ -92,7 +92,7 @@ function Questionnaire(props) {
                   value={option}
                   checked={answers()[q.key] === option}
                   onChange={() => handleAnswerChange(q.key, option)}
-                  class="form-radio text-green-600"
+                  class="form-radio text-green-600 cursor-pointer"
                 />
                 <span class="ml-2 text-gray-700">{option}</span>
               </label>

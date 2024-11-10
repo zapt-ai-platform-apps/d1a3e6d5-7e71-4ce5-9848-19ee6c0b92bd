@@ -8,10 +8,10 @@ function WelcomePage(props) {
         Discover exciting roles in the construction industry that match your interests.
         Answer a few questions, and we'll recommend career paths just for you!
       </p>
-      <img src="https://images.unsplash.com/photo-1489514354504-1653aa90e34e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NjQ4Nzh8MHwxfHNlYXJjaHwzfHxBJTIwY29sb3JmdWwlMjBpbGx1c3RyYXRpb24lMjBvZiUyMGNoaWxkcmVuJTIwaGFwcGlseSUyMGV4cGxvcmluZyUyMHZhcmlvdXMlMjBjb25zdHJ1Y3Rpb24lMjBjYXJlZXJzfGVufDB8fHx8MTczMTI2MDU3Mnww&ixlib=rb-4.0.3&q=80&w=1080" 
+      <img
+        src="https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NjQ4Nzh8MHwxfHNlYXJjaHwxMHx8QSUyMGNvbG9yZnVsJTIwaWxsdXN0cmF0aW9uJTIwb2YlMjBjaGlsZHJlbiUyMGhhcHBpbHklMjBleHBsb3JpbmclMjB2YXJpb3VzJTIwY29uc3RydWN0aW9uJTIwY2FyZWVyc3xlbnwwfHx8fDE3MzEwMTY5NDJ8MA&ixlib=rb-4.0.3&q=80&w=1080"
         alt="Kids exploring construction careers"
         class="w-full max-w-md mb-6 rounded-lg shadow-md"
-        data-image-request="A colorful illustration of children happily exploring various construction careers"
       />
       <button
         onClick={onStart}
