@@ -41,7 +41,7 @@ function Questionnaire(props) {
     setLoading(true);
     try {
       const prompt = `
-        Based on the following answers, recommend three suitable construction career roles for a kid:
+        Based on the following answers, recommend ten suitable construction career roles for a kid:
         ${JSON.stringify(answers())}
         Provide the result in the following JSON format:
         {
@@ -50,13 +50,10 @@ function Questionnaire(props) {
               "role": "Role Name 1",
               "description": "Brief description of role 1 suitable for kids."
             },
+            // Continue up to Role Name 10
             {
-              "role": "Role Name 2",
-              "description": "Brief description of role 2 suitable for kids."
-            },
-            {
-              "role": "Role Name 3",
-              "description": "Brief description of role 3 suitable for kids."
+              "role": "Role Name 10",
+              "description": "Brief description of role 10 suitable for kids."
             }
           ]
         }
@@ -72,6 +69,7 @@ function Questionnaire(props) {
       }
     } catch (error) {
       console.error('Error generating roles:', error);
+      alert('Sorry, something went wrong. Please try again.');
     } finally {
       setLoading(false);
     }

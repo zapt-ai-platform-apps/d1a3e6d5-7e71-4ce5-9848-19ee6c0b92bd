@@ -1,6 +1,6 @@
 # Construction Career Explorer
 
-Construction Career Explorer is an engaging app designed to help kids explore various roles in the construction industry. Through an interactive questionnaire, the app recommends several suitable construction roles based on the user's interests and preferences. Users can then choose one role from the recommendations to learn more about it and even have a conversation with an AI-powered professional in that field. The AI responses are formatted nicely with markdown and are in UK English.
+Construction Career Explorer is an engaging app designed to help kids explore various roles in the construction industry. Through an interactive questionnaire, the app recommends a comprehensive list of suitable construction roles based on the user's interests and preferences. Users can then choose any role from the recommendations to learn more about it and even have a conversation with an AI-powered professional in that field. The AI responses are formatted nicely with markdown and are in UK English.
 
 ## User Journey
 
@@ -15,11 +15,11 @@ Construction Career Explorer is an engaging app designed to help kids explore va
 1. **Engaging Questions**: Answer a series of fun and engaging questions about your interests and preferences.
 
 ### 4. View Recommended Roles
-1. **Personalized Suggestions**: After completing the questionnaire, view a list of several construction roles recommended for you.
+1. **Personalized Suggestions**: After completing the questionnaire, view a comprehensive list of construction roles recommended for you.
 2. **Role Descriptions**: Read brief, kid-friendly descriptions of each recommended role.
 
 ### 5. Choose a Role to Explore
-1. **Select a Role**: Pick the role that interests you the most to learn more about it.
+1. **Select a Role**: Pick any role that interests you the most to learn more about it.
 
 ### 6. Explore the Selected Role
 1. **Role Details**: View detailed information about the selected role, including responsibilities, required skills, and interesting facts.
@@ -36,7 +36,7 @@ Construction Career Explorer is an engaging app designed to help kids explore va
 ## Features
 
 - **Interactive Questionnaire**: Engaging questions that tailor role recommendations to the user's interests.
-- **Multiple Role Recommendations**: Personalized suggestions of several construction roles based on questionnaire results.
+- **Extensive Role Recommendations**: Personalized suggestions of many construction roles based on questionnaire results.
 - **Role Selection**: Users can choose their preferred role from the recommendations.
 - **Role Information**: Detailed and kid-friendly explanations of various construction roles.
 - **AI Conversations with Markdown Support and UK English**: Chat with AI-powered professionals whose responses are formatted nicely using markdown and are in UK English for better readability.
